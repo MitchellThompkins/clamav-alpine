@@ -1,6 +1,6 @@
 # ClamAV scanning Docker container based on Alpine
 
-<img src="https://github.com/tquizzle/clamav-alpine/blob/master/img/clamav.png" width=300 alt="ClamAV"> 
+<img src="https://github.com/tquizzle/clamav-alpine/blob/master/img/clamav.png" width=300 alt="ClamAV">
 
 # Usage
 
@@ -23,6 +23,7 @@ docker run --rm -v "$PWD/test_dir:/scan" clamav
 ## Server
 
 ### Start server
+
 Starting a default server instance:
 
 ```sh
