@@ -26,7 +26,7 @@ else
     echo ""
     echo -e "An error occurred (freshclam returned with exit code '$FRESHCLAM_EXIT')"
     echo ""
-    exit $FRESHCLAM_EXIT
+    exit "$FRESHCLAM_EXIT"
 fi
 
 if [ "$MODE" = "server" ]; then
@@ -45,7 +45,7 @@ elif [ "$MODE" = "scan" ]; then
     echo ""
     echo -e "Scanning $SCANDIR"
     echo ""
-    clamscan -r "$SCANDIR" $@
+    clamscan -r "$SCANDIR" "$@"
     echo ""
     echo -e "$( date -I'seconds' ) ClamAV scanning finished"
 else
